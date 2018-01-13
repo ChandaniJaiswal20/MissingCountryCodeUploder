@@ -1,0 +1,67 @@
+INFO    2016-07-01 12:50:33,944 [main] com.wipo.countryCode.UtilityManager  - Initializing Utility...........................................!!!!!
+DEBUG   2016-07-01 12:50:33,945 [main] com.wipo.countryCode.UtilityManager  - ################################################
+DEBUG   2016-07-01 12:50:33,945 [main] com.wipo.countryCode.UtilityManager  - =================================================
+DEBUG   2016-07-01 12:50:33,945 [main] com.wipo.countryCode.UtilityManager  - LOG4JCONFIGFILE:::log4j.properties
+DEBUG   2016-07-01 12:50:33,946 [main] com.wipo.countryCode.UtilityConfiguration  - loading configuration.....
+DEBUG   2016-07-01 12:50:33,946 [main] com.wipo.countryCode.UtilityConfiguration  - databaseHost:::10.133.90.102
+DEBUG   2016-07-01 12:50:33,947 [main] com.wipo.countryCode.UtilityConfiguration  - databasePort:::1433
+DEBUG   2016-07-01 12:50:33,947 [main] com.wipo.countryCode.UtilityConfiguration  - databaseTool:::sql
+DEBUG   2016-07-01 12:50:33,947 [main] com.wipo.countryCode.UtilityConfiguration  - databaseName:::IPAS310
+DEBUG   2016-07-01 12:50:33,947 [main] com.wipo.countryCode.UtilityConfiguration  - userName:::IPAS310
+DEBUG   2016-07-01 12:50:33,947 [main] com.wipo.countryCode.UtilityConfiguration  - schemaFileNameForISOCountryCode:::ISOCountryCodeType.xsd
+DEBUG   2016-07-01 12:50:33,947 [main] com.wipo.countryCode.UtilityConfiguration  - schemaFileNameForWIPOST3Code:::WIPOST3CodeType.xsd
+DEBUG   2016-07-01 12:50:33,947 [main] com.wipo.countryCode.UtilityConfiguration  - simpleTypeNameForISOCountryCode:::ISOCountryCodeType
+DEBUG   2016-07-01 12:50:33,947 [main] com.wipo.countryCode.UtilityConfiguration  - simpleTypeNameForWIPOST3Code:::WIPOST3CodeType
+DEBUG   2016-07-01 12:50:33,947 [main] com.wipo.countryCode.UtilityManager  - Obtaining Database Connection....
+INFO    2016-07-01 12:50:33,950 [main] com.wipo.countryCode.DBdataProcessor  - Database Type is MSSQL....
+INFO    2016-07-01 12:50:34,026 [main] com.wipo.countryCode.DBdataProcessor  - Driver class loaded successfully....
+ERROR   2016-07-01 12:50:34,311 [main] com.wipo.countryCode.DBdataProcessor  - Error Occured While obtaining  Connection: 
+com.microsoft.sqlserver.jdbc.SQLServerException: Login failed for user ''.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:196)
+	at com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:246)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:83)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:2532)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:1929)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.access$000(SQLServerConnection.java:41)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:1917)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:4026)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1416)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1061)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:833)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:716)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:841)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:207)
+	at com.wipo.countryCode.DBdataProcessor.configureConnection(DBdataProcessor.java:120)
+	at com.wipo.countryCode.DBdataProcessor.init(DBdataProcessor.java:55)
+	at com.wipo.countryCode.DBdataProcessor.<init>(DBdataProcessor.java:48)
+	at com.wipo.countryCode.UtilityManager.<init>(UtilityManager.java:79)
+	at com.wipo.countryCode.UtilityManager.getInstance(UtilityManager.java:99)
+	at com.wipo.countryCode.UtilityController.main(UtilityController.java:14)
+INFO    2016-07-01 12:50:34,312 [main] com.wipo.countryCode.UtilityManager  - Initializing Completed...............................................!!!!!!
+DEBUG   2016-07-01 12:50:34,312 [main] com.wipo.countryCode.UtilityManager  - =================================================
+DEBUG   2016-07-01 12:50:34,312 [main] com.wipo.countryCode.UtilityManager  - ################################################
+INFO    2016-07-01 12:50:34,312 [main] com.wipo.countryCode.DBdataProcessor  - Database Type is MSSQL....
+INFO    2016-07-01 12:50:34,312 [main] com.wipo.countryCode.DBdataProcessor  - Driver class loaded successfully....
+ERROR   2016-07-01 12:50:34,330 [main] com.wipo.countryCode.DBdataProcessor  - Error Occured While obtaining  Connection: 
+com.microsoft.sqlserver.jdbc.SQLServerException: Login failed for user ''.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:196)
+	at com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:246)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:83)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:2532)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:1929)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.access$000(SQLServerConnection.java:41)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:1917)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:4026)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1416)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1061)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:833)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:716)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:841)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:207)
+	at com.wipo.countryCode.DBdataProcessor.configureConnection(DBdataProcessor.java:120)
+	at com.wipo.countryCode.DBdataProcessor.init(DBdataProcessor.java:55)
+	at com.wipo.countryCode.DBdataProcessor.readCountryCodeFromDB(DBdataProcessor.java:159)
+	at com.wipo.countryCode.UtilityManager.getCountryCodeFromDatabase(UtilityManager.java:156)
+	at com.wipo.countryCode.UtilityController.main(UtilityController.java:16)

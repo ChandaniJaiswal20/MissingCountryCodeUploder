@@ -1,0 +1,39 @@
+INFO    2016-06-30 16:42:41,753 [main] com.wipo.countryCode.UtilityManager  - Initializing Utility...........................................!!!!!
+DEBUG   2016-06-30 16:42:41,754 [main] com.wipo.countryCode.UtilityManager  - ################################################
+DEBUG   2016-06-30 16:42:41,754 [main] com.wipo.countryCode.UtilityManager  - =================================================
+DEBUG   2016-06-30 16:42:41,754 [main] com.wipo.countryCode.UtilityManager  - LOG4JCONFIGFILE:::log4j.properties
+DEBUG   2016-06-30 16:42:41,755 [main] com.wipo.countryCode.UtilityConfiguration  - loading configuration.....
+DEBUG   2016-06-30 16:42:41,756 [main] com.wipo.countryCode.UtilityConfiguration  - databaseHost:::localhost
+DEBUG   2016-06-30 16:42:41,756 [main] com.wipo.countryCode.UtilityConfiguration  - databasePort:::1521
+DEBUG   2016-06-30 16:42:41,756 [main] com.wipo.countryCode.UtilityConfiguration  - databaseTool:::oracle
+DEBUG   2016-06-30 16:42:41,756 [main] com.wipo.countryCode.UtilityConfiguration  - databaseName:::IPAS270
+DEBUG   2016-06-30 16:42:41,756 [main] com.wipo.countryCode.UtilityConfiguration  - userName:::IPAS270
+DEBUG   2016-06-30 16:42:41,756 [main] com.wipo.countryCode.UtilityConfiguration  - schemaFileNameForISOCountryCode:::ISOCountryCodeType.xsd
+DEBUG   2016-06-30 16:42:41,756 [main] com.wipo.countryCode.UtilityConfiguration  - schemaFileNameForWIPOST3Code:::WIPOST3CodeType.xsd
+DEBUG   2016-06-30 16:42:41,756 [main] com.wipo.countryCode.UtilityConfiguration  - simpleTypeNameForISOCountryCode:::ISOCountryCodeType
+DEBUG   2016-06-30 16:42:41,756 [main] com.wipo.countryCode.UtilityConfiguration  - simpleTypeNameForWIPOST3Code:::WIPOST3CodeType
+DEBUG   2016-06-30 16:42:41,756 [main] com.wipo.countryCode.UtilityManager  - Obtaining Database Connection....
+INFO    2016-06-30 16:42:41,759 [main] com.wipo.countryCode.DBdataProcessor  - Database Type is Oracle....
+INFO    2016-06-30 16:42:41,941 [main] com.wipo.countryCode.UtilityManager  - Initializing Completed...............................................!!!!!!
+DEBUG   2016-06-30 16:42:41,941 [main] com.wipo.countryCode.UtilityManager  - =================================================
+DEBUG   2016-06-30 16:42:41,941 [main] com.wipo.countryCode.UtilityManager  - ################################################
+DEBUG   2016-06-30 16:42:41,985 [main] com.wipo.countryCode.DBdataProcessor  - Country code obtained from database are::[--, AD, AE, AF, AG, AI, AL, AM, AN, AO, AP, AQ, AR, AS, AT, AU, AW, AX, AZ, BA, BB, BD, BE, BF, BG, BH, BI, BJ, BL, BM, BN, BO, BQ, BR, BS, BT, BU, BV, BW, BX, BY, BZ, CA, CC, CD, CE, CF, CG, CH, CI, CK, CL, CM, CN, CO, CR, CS, CT, CU, CV, CW, CX, CY, CZ, DD, DE, DJ, DK, DM, DO, DZ, EA, EC, EE, EG, EH, EM, EP, ER, ES, ET, FI, FJ, FK, FM, FO, FR, FX, GA, GB, GC, GD, GE, GF, GG, GH, GI, GL, GM, GN, GO, GP, GQ, GR, GS, GT, GU, GW, GY, HK, HM, HN, HR, HT, HU, HV, IB, ID, IE, IL, IM, IN, IO, IQ, IR, IS, IT, JE, JM, JO, JP, KE, KG, KH, KI, KM, KN, KP, KR, KW, KY, KZ, LA, LB, LC, LI, LK, LR, LS, LT, LU, LV, LY, MA, MC, MD, ME, MF, MG, MH, MK, ML, MM, MN, MO, MP, MQ, MR, MS, MT, MU, MV, MW, MX, MY, MZ, NA, NC, NE, NF, NG, NI, NL, NO, NP, NR, NT, NU, NZ, OA, OM, PA, PC, PE, PF, PG, PH, PK, PL, PM, PN, PR, PS, PT, PW, PY, QA, QZ, RE, RH, RO, RS, RU, RW, SA, SB, SC, SD, SE, SG, SH, SI, SJ, SK, SL, SM, SN, SO, SP, SR, SS, ST, SU, SV, SX, SY, SZ, TC, TD, TF, TG, TH, TJ, TK, TL, TM, TN, TO, TP, TR, TT, TV, TW, TZ, UA, UG, UK, UM, US, UY, UZ, VA, VC, VE, VG, VI, VM, VN, VU, WF, WO, WS, XN, XU, XV, XX, YD, YE, YT, YU, ZA, ZB, ZC, ZD, ZE, ZF, ZH, ZI, ZJ, ZK, ZM, ZR, ZW, a0]
+DEBUG   2016-06-30 16:42:41,986 [main] com.wipo.countryCode.UtilityManager  - =================================================
+DEBUG   2016-06-30 16:42:41,986 [main] com.wipo.countryCode.UtilityManager  - List of CountryCode present in database::[--, AD, AE, AF, AG, AI, AL, AM, AN, AO, AP, AQ, AR, AS, AT, AU, AW, AX, AZ, BA, BB, BD, BE, BF, BG, BH, BI, BJ, BL, BM, BN, BO, BQ, BR, BS, BT, BU, BV, BW, BX, BY, BZ, CA, CC, CD, CE, CF, CG, CH, CI, CK, CL, CM, CN, CO, CR, CS, CT, CU, CV, CW, CX, CY, CZ, DD, DE, DJ, DK, DM, DO, DZ, EA, EC, EE, EG, EH, EM, EP, ER, ES, ET, FI, FJ, FK, FM, FO, FR, FX, GA, GB, GC, GD, GE, GF, GG, GH, GI, GL, GM, GN, GO, GP, GQ, GR, GS, GT, GU, GW, GY, HK, HM, HN, HR, HT, HU, HV, IB, ID, IE, IL, IM, IN, IO, IQ, IR, IS, IT, JE, JM, JO, JP, KE, KG, KH, KI, KM, KN, KP, KR, KW, KY, KZ, LA, LB, LC, LI, LK, LR, LS, LT, LU, LV, LY, MA, MC, MD, ME, MF, MG, MH, MK, ML, MM, MN, MO, MP, MQ, MR, MS, MT, MU, MV, MW, MX, MY, MZ, NA, NC, NE, NF, NG, NI, NL, NO, NP, NR, NT, NU, NZ, OA, OM, PA, PC, PE, PF, PG, PH, PK, PL, PM, PN, PR, PS, PT, PW, PY, QA, QZ, RE, RH, RO, RS, RU, RW, SA, SB, SC, SD, SE, SG, SH, SI, SJ, SK, SL, SM, SN, SO, SP, SR, SS, ST, SU, SV, SX, SY, SZ, TC, TD, TF, TG, TH, TJ, TK, TL, TM, TN, TO, TP, TR, TT, TV, TW, TZ, UA, UG, UK, UM, US, UY, UZ, VA, VC, VE, VG, VI, VM, VN, VU, WF, WO, WS, XN, XU, XV, XX, YD, YE, YT, YU, ZA, ZB, ZC, ZD, ZE, ZF, ZH, ZI, ZJ, ZK, ZM, ZR, ZW, a0]
+DEBUG   2016-06-30 16:42:41,987 [main] com.wipo.countryCode.UtilityManager  - =================================================
+DEBUG   2016-06-30 16:42:41,987 [main] com.wipo.countryCode.UtilityManager  - ################################################
+INFO    2016-06-30 16:42:42,129 [main] com.wipo.countryCode.UtilityManager  - List of CountryCode in wipoST3Code  that are missing from Databse::[]
+INFO    2016-06-30 16:42:42,129 [main] com.wipo.countryCode.UtilityManager  - Number of CountryCode in wipoST3Code  that are missing from Databse  ::0
+DEBUG   2016-06-30 16:42:42,129 [main] com.wipo.countryCode.UtilityManager  - =================================================
+INFO    2016-06-30 16:42:42,132 [main] com.wipo.countryCode.UtilityManager  - List of CountryCode in isoCountryCode  that are missing from Databse::[]
+INFO    2016-06-30 16:42:42,132 [main] com.wipo.countryCode.UtilityManager  - Number of CountryCode in isoCountryCode  that are missing from Databse  ::0
+DEBUG   2016-06-30 16:42:42,132 [main] com.wipo.countryCode.UtilityManager  - =================================================
+INFO    2016-06-30 16:42:42,132 [main] com.wipo.countryCode.UtilityManager  - map_of_missing_CountryCode  from both xsd which is not present in database ::{}
+INFO    2016-06-30 16:42:42,132 [main] com.wipo.countryCode.UtilityManager  - Number of CountryCode from both xsd which is not present in database ::0
+INFO    2016-06-30 16:42:42,162 [main] com.wipo.countryCode.DBdataProcessor  - Missing Country Code inserted into CF_GEO_COUNTRY table  successfully.....!!!
+DEBUG   2016-06-30 16:42:42,162 [main] com.wipo.countryCode.UtilityManager  - Closing database connection..........!!
+DEBUG   2016-06-30 16:42:42,163 [main] com.wipo.countryCode.UtilityManager  - Database connection closed..........!!
+INFO    2016-06-30 16:42:42,163 [main] com.wipo.countryCode.UtilityManager  - Processing Completed.......................!!!
+INFO    2016-06-30 16:42:42,163 [main] com.wipo.countryCode.UtilityManager  - =================================================
+INFO    2016-06-30 16:42:42,163 [main] com.wipo.countryCode.UtilityManager  - Please check processed details in log file generated in log folder
+INFO    2016-06-30 16:42:42,163 [main] com.wipo.countryCode.UtilityManager  - ********************************************************

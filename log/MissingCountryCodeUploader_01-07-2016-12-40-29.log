@@ -1,0 +1,49 @@
+INFO    2016-07-01 12:40:29,786 [main] com.wipo.countryCode.UtilityManager  - Initializing Utility...........................................!!!!!
+DEBUG   2016-07-01 12:40:29,787 [main] com.wipo.countryCode.UtilityManager  - ################################################
+DEBUG   2016-07-01 12:40:29,787 [main] com.wipo.countryCode.UtilityManager  - =================================================
+DEBUG   2016-07-01 12:40:29,787 [main] com.wipo.countryCode.UtilityManager  - LOG4JCONFIGFILE:::log4j.properties
+DEBUG   2016-07-01 12:40:29,788 [main] com.wipo.countryCode.UtilityConfiguration  - loading configuration.....
+DEBUG   2016-07-01 12:40:29,788 [main] com.wipo.countryCode.UtilityConfiguration  - databaseHost:::10.133.90.102
+DEBUG   2016-07-01 12:40:29,788 [main] com.wipo.countryCode.UtilityConfiguration  - databasePort:::1433
+DEBUG   2016-07-01 12:40:29,788 [main] com.wipo.countryCode.UtilityConfiguration  - databaseTool:::sql
+DEBUG   2016-07-01 12:40:29,788 [main] com.wipo.countryCode.UtilityConfiguration  - databaseName:::IPAS310
+DEBUG   2016-07-01 12:40:29,788 [main] com.wipo.countryCode.UtilityConfiguration  - userName:::IPAS310
+DEBUG   2016-07-01 12:40:29,789 [main] com.wipo.countryCode.UtilityConfiguration  - schemaFileNameForISOCountryCode:::ISOCountryCodeType.xsd
+DEBUG   2016-07-01 12:40:29,789 [main] com.wipo.countryCode.UtilityConfiguration  - schemaFileNameForWIPOST3Code:::WIPOST3CodeType.xsd
+DEBUG   2016-07-01 12:40:29,789 [main] com.wipo.countryCode.UtilityConfiguration  - simpleTypeNameForISOCountryCode:::ISOCountryCodeType
+DEBUG   2016-07-01 12:40:29,789 [main] com.wipo.countryCode.UtilityConfiguration  - simpleTypeNameForWIPOST3Code:::WIPOST3CodeType
+DEBUG   2016-07-01 12:40:29,789 [main] com.wipo.countryCode.UtilityManager  - Obtaining Database Connection....
+INFO    2016-07-01 12:40:29,789 [main] com.wipo.countryCode.DBdataProcessor  - Database Type is MSSQL....
+INFO    2016-07-01 12:40:29,863 [main] com.wipo.countryCode.DBdataProcessor  - Driver class loaded successfully....
+ERROR   2016-07-01 12:40:29,866 [main] com.wipo.countryCode.DBdataProcessor  - Error Occured While obtaining  Connection: 
+com.microsoft.sqlserver.jdbc.SQLServerException: The connection string contains a badly formed name or value.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:170)
+	at com.microsoft.sqlserver.jdbc.Util.parseUrl(Util.java:342)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.parseAndMergeProperties(SQLServerDriver.java:855)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:837)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:207)
+	at com.wipo.countryCode.DBdataProcessor.configureConnection(DBdataProcessor.java:115)
+	at com.wipo.countryCode.DBdataProcessor.init(DBdataProcessor.java:55)
+	at com.wipo.countryCode.DBdataProcessor.<init>(DBdataProcessor.java:48)
+	at com.wipo.countryCode.UtilityManager.<init>(UtilityManager.java:79)
+	at com.wipo.countryCode.UtilityManager.getInstance(UtilityManager.java:99)
+	at com.wipo.countryCode.UtilityController.main(UtilityController.java:14)
+INFO    2016-07-01 12:40:29,867 [main] com.wipo.countryCode.UtilityManager  - Initializing Completed...............................................!!!!!!
+DEBUG   2016-07-01 12:40:29,867 [main] com.wipo.countryCode.UtilityManager  - =================================================
+DEBUG   2016-07-01 12:40:29,867 [main] com.wipo.countryCode.UtilityManager  - ################################################
+INFO    2016-07-01 12:40:29,867 [main] com.wipo.countryCode.DBdataProcessor  - Database Type is MSSQL....
+INFO    2016-07-01 12:40:29,867 [main] com.wipo.countryCode.DBdataProcessor  - Driver class loaded successfully....
+ERROR   2016-07-01 12:40:29,867 [main] com.wipo.countryCode.DBdataProcessor  - Error Occured While obtaining  Connection: 
+com.microsoft.sqlserver.jdbc.SQLServerException: The connection string contains a badly formed name or value.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:170)
+	at com.microsoft.sqlserver.jdbc.Util.parseUrl(Util.java:342)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.parseAndMergeProperties(SQLServerDriver.java:855)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:837)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:207)
+	at com.wipo.countryCode.DBdataProcessor.configureConnection(DBdataProcessor.java:115)
+	at com.wipo.countryCode.DBdataProcessor.init(DBdataProcessor.java:55)
+	at com.wipo.countryCode.DBdataProcessor.readCountryCodeFromDB(DBdataProcessor.java:154)
+	at com.wipo.countryCode.UtilityManager.getCountryCodeFromDatabase(UtilityManager.java:156)
+	at com.wipo.countryCode.UtilityController.main(UtilityController.java:16)

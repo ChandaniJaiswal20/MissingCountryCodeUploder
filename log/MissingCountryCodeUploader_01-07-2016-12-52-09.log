@@ -1,0 +1,17 @@
+INFO    2016-07-01 12:52:09,702 [main] com.wipo.countryCode.UtilityManager  - Initializing Utility...........................................!!!!!
+DEBUG   2016-07-01 12:52:09,704 [main] com.wipo.countryCode.UtilityManager  - ################################################
+DEBUG   2016-07-01 12:52:09,704 [main] com.wipo.countryCode.UtilityManager  - =================================================
+DEBUG   2016-07-01 12:52:09,704 [main] com.wipo.countryCode.UtilityManager  - LOG4JCONFIGFILE:::log4j.properties
+DEBUG   2016-07-01 12:52:09,704 [main] com.wipo.countryCode.UtilityConfiguration  - loading configuration.....
+DEBUG   2016-07-01 12:52:09,705 [main] com.wipo.countryCode.UtilityConfiguration  - databaseHost:::10.133.90.102
+DEBUG   2016-07-01 12:52:09,705 [main] com.wipo.countryCode.UtilityConfiguration  - databasePort:::1433
+DEBUG   2016-07-01 12:52:09,705 [main] com.wipo.countryCode.UtilityConfiguration  - databaseTool:::sql
+DEBUG   2016-07-01 12:52:09,706 [main] com.wipo.countryCode.UtilityConfiguration  - databaseName:::IPAS310
+DEBUG   2016-07-01 12:52:09,706 [main] com.wipo.countryCode.UtilityConfiguration  - userName:::IPAS310
+DEBUG   2016-07-01 12:52:09,706 [main] com.wipo.countryCode.UtilityConfiguration  - schemaFileNameForISOCountryCode:::ISOCountryCodeType.xsd
+DEBUG   2016-07-01 12:52:09,706 [main] com.wipo.countryCode.UtilityConfiguration  - schemaFileNameForWIPOST3Code:::WIPOST3CodeType.xsd
+DEBUG   2016-07-01 12:52:09,706 [main] com.wipo.countryCode.UtilityConfiguration  - simpleTypeNameForISOCountryCode:::ISOCountryCodeType
+DEBUG   2016-07-01 12:52:09,706 [main] com.wipo.countryCode.UtilityConfiguration  - simpleTypeNameForWIPOST3Code:::WIPOST3CodeType
+DEBUG   2016-07-01 12:52:09,706 [main] com.wipo.countryCode.UtilityManager  - Obtaining Database Connection....
+INFO    2016-07-01 12:52:09,707 [main] com.wipo.countryCode.DBdataProcessor  - Database Type is MSSQL....
+INFO    2016-07-01 12:52:09,787 [main] com.wipo.countryCode.DBdataProcessor  - Driver class loaded successfully....

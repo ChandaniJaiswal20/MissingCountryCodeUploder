@@ -1,0 +1,62 @@
+INFO    2017-08-08 16:26:58,519 [main] com.wipo.countryCode.UtilityManager  - Initializing Utility...........................................!!!!!
+DEBUG   2017-08-08 16:26:58,519 [main] com.wipo.countryCode.UtilityManager  - ################################################
+DEBUG   2017-08-08 16:26:58,519 [main] com.wipo.countryCode.UtilityManager  - =================================================
+DEBUG   2017-08-08 16:26:58,519 [main] com.wipo.countryCode.UtilityManager  - LOG4JCONFIGFILE:::log4j.properties
+DEBUG   2017-08-08 16:26:58,519 [main] com.wipo.countryCode.UtilityConfiguration  - loading configuration.....
+DEBUG   2017-08-08 16:26:58,529 [main] com.wipo.countryCode.UtilityConfiguration  - databaseHost:::localhost
+DEBUG   2017-08-08 16:26:58,529 [main] com.wipo.countryCode.UtilityConfiguration  - databasePort:::1521
+DEBUG   2017-08-08 16:26:58,529 [main] com.wipo.countryCode.UtilityConfiguration  - databaseTool:::oracle
+DEBUG   2017-08-08 16:26:58,529 [main] com.wipo.countryCode.UtilityConfiguration  - databaseName:::IPAS270
+DEBUG   2017-08-08 16:26:58,529 [main] com.wipo.countryCode.UtilityConfiguration  - userName:::IPAS270
+DEBUG   2017-08-08 16:26:58,529 [main] com.wipo.countryCode.UtilityConfiguration  - schemaFileNameForISOCountryCode:::ISOCountryCodeType.xsd
+DEBUG   2017-08-08 16:26:58,529 [main] com.wipo.countryCode.UtilityConfiguration  - schemaFileNameForWIPOST3Code:::WIPOST3CodeType.xsd
+DEBUG   2017-08-08 16:26:58,529 [main] com.wipo.countryCode.UtilityConfiguration  - simpleTypeNameForISOCountryCode:::ISOCountryCodeType
+DEBUG   2017-08-08 16:26:58,529 [main] com.wipo.countryCode.UtilityConfiguration  - simpleTypeNameForWIPOST3Code:::WIPOST3CodeType
+DEBUG   2017-08-08 16:26:58,529 [main] com.wipo.countryCode.UtilityConfiguration  - fileNameForISOAlpha2Code:::ISO-Alpha2-All.xlsx
+DEBUG   2017-08-08 16:26:58,529 [main] com.wipo.countryCode.UtilityManager  - Obtaining Database Connection....
+INFO    2017-08-08 16:26:58,529 [main] com.wipo.countryCode.DBdataProcessor  - Database Type is Oracle....
+ERROR   2017-08-08 16:26:58,819 [main] com.wipo.countryCode.DBdataProcessor  - Error Occured while obtaining connection 
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:283)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:278)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.receiveOauth(T4CTTIoauthenticate.java:785)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:362)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:185)
+	at com.wipo.countryCode.DBdataProcessor.configureConnection(DBdataProcessor.java:91)
+	at com.wipo.countryCode.DBdataProcessor.init(DBdataProcessor.java:55)
+	at com.wipo.countryCode.DBdataProcessor.<init>(DBdataProcessor.java:48)
+	at com.wipo.countryCode.UtilityManager.<init>(UtilityManager.java:60)
+	at com.wipo.countryCode.UtilityManager.getInstance(UtilityManager.java:71)
+	at com.wipo.countryCode.UtilityController.main(UtilityController.java:14)
+INFO    2017-08-08 16:26:58,819 [main] com.wipo.countryCode.UtilityManager  - Initializing Completed...............................................!!!!!!
+DEBUG   2017-08-08 16:26:58,819 [main] com.wipo.countryCode.UtilityManager  - =================================================
+DEBUG   2017-08-08 16:26:58,819 [main] com.wipo.countryCode.UtilityManager  - ################################################
+INFO    2017-08-08 16:26:58,819 [main] com.wipo.countryCode.DBdataProcessor  - Database Type is Oracle....
+ERROR   2017-08-08 16:26:58,829 [main] com.wipo.countryCode.DBdataProcessor  - Error Occured while obtaining connection 
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:283)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:278)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.receiveOauth(T4CTTIoauthenticate.java:785)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:362)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:185)
+	at com.wipo.countryCode.DBdataProcessor.configureConnection(DBdataProcessor.java:91)
+	at com.wipo.countryCode.DBdataProcessor.init(DBdataProcessor.java:55)
+	at com.wipo.countryCode.DBdataProcessor.readCountryCodeFromDB(DBdataProcessor.java:154)
+	at com.wipo.countryCode.UtilityManager.getCountryCodeFromDatabase(UtilityManager.java:138)
+	at com.wipo.countryCode.UtilityController.main(UtilityController.java:16)
